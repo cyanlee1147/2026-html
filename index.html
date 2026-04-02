@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的個人網站</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #e3f2fd, #fff9c4);
+      color: #333;
+    }
+    header {
+      background-color: #81d4fa;
+      color: #333;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #fff176;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: #333;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #0288d1;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    h2 {
+      border-left: 5px solid #81d4fa;
+      padding-left: 10px;
+      margin-top: 0;
+    }
+
+    /* 專案與按鈕樣式 */
+    .project-item {
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 25px;
+      background-color: #81d4fa;
+      color: #333;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background-color: #4fc3f7;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    /* LINE 專屬顏色 */
+    .btn-line {
+      background-color: #06C755;
+      color: white;
+    }
+    .btn-line:hover {
+      background-color: #05a346;
+    }
+
+    footer {
+      background-color: #81d4fa;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Cyan 的網站</h1>
+  <p>探索資料分析、AI 應用與遠端工作的旅程</p>
+</header>
+
+<nav>
+  <a href="#about">關於我</a>
+  <a href="#skills">技能</a>
+  <a href="#projects">專案作品</a>
+  <a href="#links">相關連結</a>
+  <a href="#contact">聯絡</a>
+</nav>
+
+<div class="container">
+
+  <div class="card" id="about">
+    <h2>關於我</h2>
+    <p>你好！我是 Cyan。熱衷於透過數據挖掘價值，目前專注於學習 **資料分析** 與 **AI 應用**。我的目標是打造高效的工作流，並成為一名自由流動的遠端工作者。</p>
+  </div>
+
+  <div class="card" id="skills">
+    <h2>專業技能</h2>
+    <ul>
+      <li><strong>程式語言：</strong>Python (自動化、爬蟲)</li>
+      <li><strong>數據分析：</strong>SQL, Pandas, Excel</li>
+      <li><strong>視覺化：</strong>Power BI, Tableau</li>
+      <li><strong>AI 應用：</strong>LLM 串接、機器人開發</li>
+    </ul>
+  </div>
+
+  <div class="card" id="projects">
+    <h2>專案作品</h2>
+    
+    <div class="project-item">
+      <h3>🤖 LINE 機器人串接 Gemini AI</h3>
+      <p>開發一個整合 Google Gemini Pro 模型的 LINE 官方帳號，實現流暢的自然語言對話與智能助手功能。</p>
+      <a class="btn btn-line" href="https://line.me/R/ti/p/@653qxgli" target="_blank">
+        立即體驗機器人
+      </a>
+    </div>
+
+    <hr style="border: 0.5px solid #eee; margin: 20px 0;">
+
+    <div class="project-item">
+      <h3>📊 其他專案</h3>
+      <ul>
+        <li>銷售數據分析 Dashboard (Power BI)</li>
+        <li>個人效率追蹤系統 (Notion / Python)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" id="links">
+    <h2>其他連結</h2>
+    <p><strong>Notion 履歷：</strong><br>
+      <a class="btn" href="https://www.notion.so/cyan47/Cyan-57d2ede8674e430185f0e83a92a6f60f" target="_blank">View Notion Resume</a>
+    </p>
+
+    <p style="margin-top:20px;"><strong>Google Sheets 經歷表：</strong><br>
+      <a class="btn" href="https://docs.google.com/spreadsheets/d/1WKGFZZE1Cf2JCq2RnE05SbrqWhht-HL1zA39SFi4hRY/edit?gid=0" target="_blank">Open Sheets</a>
+    </p>
+  </div>
+
+  <div class="card" id="contact">
+    <h2>聯絡我</h2>
+    <p>如果您對我的作品感興趣，歡迎透過 Email 聯繫：</p>
+    <p>📧 <strong>cyanlee47@gmail.com</strong></p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Cyan | 保持好奇，持續學習</p>
+</footer>
+
+</body>
+</html>
